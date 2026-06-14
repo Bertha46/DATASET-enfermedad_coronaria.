@@ -1,0 +1,82 @@
+1. metricas_modelo.csv
+
+Debe contener algo similar a:
+
+Accuracy,Precision,Recall,Specificity,F1_Score
+0.85,0.78,0.74,0.89,0.76
+2. comparacion_modelos.csv
+Modelo,AUC
+Completo,0.82
+Simplificado,0.79
+3. coeficientes_modelo.csv
+Variable,Coeficiente
+age,0.067
+male,0.430
+sysBP,0.018
+glucose,0.009
+4. matriz_confusion.txt
+
+Ejemplo:
+
+Confusion Matrix
+
+          Reference
+Prediction   0   1
+         0 620  85
+         1  60 120
+
+Accuracy : 0.836
+5. curva_ROC.png
+
+Imagen generada por:
+
+plot(roc_obj)
+6. coeficientes_modelo.png
+
+Gráfico de barras con los coeficientes del modelo.
+
+7. comparacion_modelos.png
+
+Gráfico comparando AUC del modelo completo y simplificado.
+
+8. matriz_confusion.png
+
+Captura o gráfico de la matriz de confusión.
+
+Estructura final de GitHub
+
+Cuando termines, tu repositorio debe verse así:
+
+Actividad_Framingham/
+
+README.md
+
+DATASET/
+└── enfermedad_coronaria.csv
+
+SCRIPT_R/
+└── enfermedad_coronaria.R
+
+DOCUMENTO_SOPORTE/
+└── Informe_Framingham.pdf
+
+CAPTURAS/
+├── 01_Carga_Dataset.png
+├── 02_Exploracion_Datos.png
+├── 03_Limpieza_Datos.png
+├── 04_Modelo_Regresion.png
+├── 05_Resumen_Modelo.png
+├── 06_Variables_Significativas.png
+├── 07_Matriz_Confusion.png
+├── 08_Curva_ROC.png
+└── 09_Modelo_Simplificado.png
+
+RESULTADOS/
+├── curva_ROC.png
+├── matriz_confusion.png
+├── coeficientes_modelo.png
+├── comparacion_modelos.png
+├── metricas_modelo.csv
+├── coeficientes_modelo.csv
+├── comparacion_modelos.csv
+└── matriz_confusion.txt
