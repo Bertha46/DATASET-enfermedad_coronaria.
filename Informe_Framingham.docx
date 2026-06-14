@@ -1,0 +1,115 @@
+PREDICCIÓN DE ENFERMEDAD CORONARIA A 10 AÑOS MEDIANTE REGRESIÓN LOGÍSTICA
+Estudiante
+
+Bertha Delmira Mero Castro
+
+Asignatura
+
+Analítica de Datos
+
+Introducción
+
+Las enfermedades cardiovasculares constituyen una de las principales causas de mortalidad a nivel mundial. La Organización Mundial de la Salud estima que millones de personas fallecen anualmente debido a enfermedades relacionadas con el corazón.
+
+El presente trabajo utiliza el conjunto de datos Framingham para construir un modelo predictivo mediante regresión logística que permita identificar el riesgo de desarrollar enfermedad coronaria durante los próximos diez años.
+
+Objetivos
+Objetivo General
+
+Desarrollar un modelo de regresión logística para predecir el riesgo de enfermedad coronaria a diez años.
+
+Objetivos Específicos
+Realizar el preprocesamiento de datos.
+Explorar las variables del conjunto de datos.
+Construir un modelo predictivo.
+Identificar variables significativas.
+Evaluar el modelo mediante métricas de clasificación.
+Comparar un modelo completo con un modelo simplificado.
+Descripción del Dataset
+
+El conjunto de datos corresponde al estudio Framingham Heart Study y contiene variables demográficas, conductuales y médicas de pacientes.
+
+Variable Objetivo
+
+TenYearCHD
+
+0 = No presenta riesgo.
+1 = Presenta riesgo de enfermedad coronaria a 10 años.
+Variables Analizadas
+Demográficas
+Sexo
+Edad
+Conductuales
+Fumador actual
+Cigarrillos por día
+Antecedentes Médicos
+Medicación para presión arterial
+Accidente cerebrovascular previo
+Hipertensión
+Diabetes
+Datos Médicos Actuales
+Colesterol total
+Presión arterial sistólica
+Presión arterial diastólica
+Índice de masa corporal
+Frecuencia cardíaca
+Glucosa
+Metodología
+Paso 1: Carga del Dataset
+
+Se importó el archivo enfermedad_coronaria.csv en RStudio.
+
+[INSERTAR CAPTURA 1]
+
+Paso 2: Exploración de Datos
+
+Se analizó la estructura y resumen estadístico de las variables.
+
+[INSERTAR CAPTURA 2]
+
+Paso 3: Limpieza de Datos
+
+Se identificaron y eliminaron valores faltantes.
+
+[INSERTAR CAPTURA 3]
+
+Paso 4: Construcción del Modelo
+
+Se construyó un modelo de regresión logística utilizando todas las variables disponibles.
+
+[INSERTAR CAPTURA 4]
+
+Paso 5: Variables Significativas
+
+Se identificaron las variables con valor p menor a 0.05.
+
+[INSERTAR CAPTURA 5]
+
+Paso 6: Matriz de Confusión
+
+Se evaluó el rendimiento del modelo mediante una matriz de confusión.
+
+[INSERTAR CAPTURA 6]
+
+Paso 7: Curva ROC
+
+Se calculó la curva ROC y el área
+
+Paso 8: Modelo Simplificado
+
+Se construyó un segundo modelo utilizando únicamente las dos variables más significativas.
+
+Conclusiones
+La regresión logística permitió estimar el riesgo de enfermedad coronaria a diez años.
+Las variables más significativas aportan mayor capacidad predictiva.
+La curva ROC permite evaluar la calidad del modelo.
+El modelo simplificado puede mantener un rendimiento adecuado con menos variables.
+RStudio facilita el análisis estadístico y la construcción de modelos predictivos.
+Evidencias
+
+Adjuntar todas las capturas de pantalla solicitadas por el docente mostrando:
+
+Pantalla completa.
+Fecha y hora del sistema.
+Ventana de RStudio.
+Resultados de ejecución.
