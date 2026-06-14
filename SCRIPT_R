@@ -1,0 +1,63 @@
+#########################################################
+
+ACTIVIDAD: PREDICCIÓN DE ENFERMEDAD CORONARIA
+REGRESIÓN LOGÍSTICA EN R
+Estudiante: Bertha Delmira Mero Castro
+
+#########################################################
+
+#########################################################
+
+1. CARGA DE LIBRERÍAS
+
+#########################################################
+
+library(tidyverse)
+library(caret)
+library(pROC)
+library(ggplot2)
+
+#########################################################
+
+2. CARGA DEL DATASET
+
+#########################################################
+
+datos <- read.csv("enfermedad_coronaria.csv")
+
+cat("Primeras filas del dataset:\n")
+head(datos)
+
+#########################################################
+
+3. EXPLORACIÓN DE LOS DATOS
+
+#########################################################
+
+cat("\nEstructura de datos:\n")
+str(datos)
+
+cat("\nResumen estadístico:\n")
+summary(datos)
+
+cat("\nDimensiones:\n")
+dim(datos)
+
+cat("\nTipos de datos:\n")
+sapply(datos, class)
+
+#########################################################
+
+4. LIMPIEZA Y TRANSFORMACIÓN
+
+#########################################################
+
+cat("\nValores faltantes por columna:\n")
+colSums(is.na(datos))
+
+datos <- na.omit(datos)
+
+datos$TenYearCHD <- as.factor(datos$TenYearCHD)
+
+cat("\nVerificación de la variable objetivo:\n")
+str(datos$TenYearCHD)
